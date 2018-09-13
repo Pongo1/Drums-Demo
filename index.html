@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Steel Drum Bands | Demo </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all,follow">
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <!-- Font Awesome CSS-->
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+    <!-- Custom Font Icons CSS-->
+    <link rel="stylesheet" href="css/landy-iconfont.css">
+    <!-- Google fonts - Open Sans-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800">
+    <!-- owl carousel-->
+    <link rel="stylesheet" href="vendor/owl.carousel/assets/owl.carousel.css">
+    <link rel="stylesheet" href="vendor/owl.carousel/assets/owl.theme.default.css">
+    <!-- theme stylesheet-->
+    <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
+    <!-- Custom stylesheet - for your changes-->
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="favicon.png">
+    <!-- Tweaks for older IEs--><!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+  </head>
+  <style type="text/css">
+    .start-stance{
+      border:solid 5px white;
+      border-radius:10px;
+      cursor:pointer;
+      transform: rotateZ(10deg);
+    }
+    .start-stance:hover{
+      transform: rotateZ(0deg);
+      transition: .3s ease-in-out;
+    }
+    .z-depth-lil{
+       -webkit-box-shadow: -5.665px 9.429px 35px 0px rgba(0, 0, 0, 0.2);
+        box-shadow: -5.665px 9.429px 35px 0px rgba(0, 0, 0, 0.2);
+    }
+    .card{
+      margin:10px !important;
+      border-radius: 15px !important;
+    }
+    .about-img{
+      border-top-right-radius: 15px; 
+      border-top-left-radius: 15px;
+      border: solid 3px teal;
+       -webkit-box-shadow: -3.665px 6.429px 30px 0px gray;
+        box-shadow: -3.665px 6.429px 30px 0px gray;
+    }
+    .my-theme-text{
+      color:teal;
+    }
+    .c-hover:hover{
+      -webkit-box-shadow: -3.665px 6.429px 30px 0px teal;
+        box-shadow: -1.665px 1.429px 30px 0px teal;
+        transition:.3s ease-in-out;
+        cursor:pointer;
+    }
+    .events-div{
+        margin-top:-120px;
+        width:100%; 
+        height:700px;
+        background:url("img/theme-event-3.png") center center no-repeat;
+      }
+      .weddings-div{
+        margin-top:-120px;
+        width:100%; 
+        height:700px;
+        background:url("img/wedding-1.png") center center no-repeat;
+
+      }
+    .footer-links{
+      border-top-right-radius: 50px; 
+      border-bottom-right-radius: 50px; 
+      border-top-left-radius: 50px; 
+      border-bottom-left-radius: 50px; 
+      padding:10px;
+      cursor:pointer !important;
+    }
+    .welcome-touch{
+      margin:120px;
+      margin-top:-700px;
+    }
+    .welcome-div{
+      margin-top:-190px;
+    }
+    .nav-lift{
+      -webkit-box-shadow: -1.665px 2.429px 35px 0px rgba(0, 0, 0, 0.4);
+        box-shadow: -1.665px 2.429px 35px 0px rgba(0, 0, 0, 0.4);
+    }
+    .angel{
+      color:white;
+    }
+    .welcome{
+      font-size:5rem;
+    }
+    .welcome-text{
+      font-size:1.3rem;
+    }
+    .arr-stance{
+      opacity: .3
+    }
+    .s-screen-area{
+      display: none;
+    }
+    .h1-fix{
+
+    }
+    .arr-stance:hover{
+      opacity: 1; 
+      transform: .3s ease-in-out;
+    }
+    @media(max-width:786px){
+      .h1-fix{
+        margin-bottom:-75px;
+      }
+      .pic-out{
+        display:none;
+      }
+      .screen-fix{
+        margin-top:300px;
+      }
+    }
+    @media(max-width:993px){
+      .start-stance{
+        transform: rotateZ(0deg);
+      }
+      .pic-out{
+        display:none;
+      }
+      .screen-fix{
+        margin-top:300px;
+      }
+
+    }
+
+    @media(max-width:525px){
+      .phone-para{
+        font-size:1rem;
+      }
+      .s-screen-area{
+        display: block;
+        margin-left:-10px;
+      }
+      .p-v-clear{
+        display:none;
+      }
+      .welcome-touch{
+        margin:0px;
+      }
+      .welcome-div{
+        margin-top:-30px;
+      }
+      #hero{
+        padding-top:60px;
+        height:400px !important;
+      }
+      .zero-padding{
+        padding:0 !important;
+      }
+
+      .events-div{
+        background:inherit;
+        margin-top:-30px;
+      }
+      .weddings-div{
+        background:inherit;
+        margin-top:-30px;
+      }
+    }
+    @media (max-width:360px){
+      .outer-fix{
+        padding:100px 0px !important;
+      }
+      .itm-fix{
+        margin:0px !important;
+      }
+      .phone-para{
+        font-size:1rem;
+      }
+      .s-screen-area{
+        display: block;
+        margin-left:-10px;
+      }
+      .p-v-clear{
+        display:none;
+      }
+      .welcome-touch{
+        margin:0px;
+      }
+      .welcome-div{
+        margin-top:5px;
+      }
+      #hero{
+        padding-top:60px;
+        height:400px !important;
+      }
+      .zero-padding{
+        padding:0 !important;
+      }
+      .events-div{
+        background:inherit;
+        margin-top:5px;
+      }
+      .weddings-div{
+        background:inherit;
+        margin-top:5px;
+      }
+    }
+  </style>
+  <body>
+    <!-- navbar-->
+    <header class="header">
+      <nav class="navbar navbar-expand-lg fixed-top nav-lift"><a href="index.html" class="navbar-brand">
+        <img src = "img/sdb-logo.png" />
+      </a>
+        <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><span></span><span></span><span></span></button>
+        <div id="navbarSupportedContent" class="collapse navbar-collapse">
+          <ul class="navbar-nav ml-auto align-items-start align-items-lg-center">
+            <li class="nav-item"><a href="#about-us" class="nav-link link-scroll">PHOTOS</a></li>
+            <li class="nav-item"><a href="#" class="nav-link link-scroll">VIDEOS</a></li>
+            <li class="nav-item"><a href="#testimonials" class="nav-link link-scroll">TESTIMONIALS</a></li>
+             <li class="nav-item"><a href="#" class="nav-link link-scroll">SHOP</a></li>
+            <li class="nav-item"><a href="#" class="nav-link link-scroll">TEAM BUILDING</a></li>
+            <li class="nav-item"><a href="#" class="nav-link link-scroll">CONTACT US</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <input  type='hidden' id='c-helper' value='welcome' />
+    <section id="hero" class="hero hero-home bg-gray" style="height:700px; max-height:700px;overflow-y:hidden">
+      <div>
+         <!-- ==========================WEDDING HEADER AREA ========================= -->
+        <div data-hovering='false'class="weddings-div" id="weddings-div" style="display:none">
+          <div class='s-screen-area z-depth-lil'> 
+            <div class="welcome-div " style="background:teal;color:white;height:400px;padding:50px;">
+              <center>
+                <h2 class="angel">Weddings</h2>
+                <p class="lead angel phone-para">
+                  Steeldrumbands are specialists in providing entertainment for the most special of occasions, and weddings are no exception.
+                </p>
+              </center>
+            </div>
+          </div>
+
+
+          <div style="background:black; height:100%; width:100%;opacity:.5"class="p-v-clear"></div>
+          <div style="margin:120px;margin-top:-540px;" class="p-v-clear">
+            <div class="row d-flex ">
+              <div class="col-lg-12 col-xs-12 col-md-12 order-md-3 order-sm-3 order-sm-3">
+                  <button class="btn btn-danger arr-stance"onclick="showEvents()"><i class="fa fa-long-arrow-left"></i> Events</button>
+                  <button class="btn btn-danger arr-stance" onclick="showWelcome()">Welcome <i class="fa fa-long-arrow-right"></i> </button>
+                </div>
+              <div class="col-lg-6 col-xs-12 col-md-6 col-sm-12 text order-2 order-md-1 order-sm-1 order-lg-1">
+
+                <h1 class="angel welcome h1-fix" >Weddings<i class = "fa fa-drum-steelpan"></i></h1>
+                <p class="hero-text angel welcome-text">
+                  Steeldrumbands are specialists in providing entertainment for the most special of occasions, and weddings are no exception.
+                </p>
+                <button class="btn btn-success z-depth-lil" ><i class="fa fa-shopping-cart"></i> <span style="margin:5px;"> BUY DRUM SET </span></button>
+                <div class="CTA"></div>
+                
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 order-md-4 order-sm-4 pic-out"><img src="img/wedding.png"style="margin-top:-50px;" alt="..." class="img-fluid start-stance">
+              </div>
+            </div>
+          </div>
+        </div>
+          <!-- =============================================WEDDING END ============================== -->
+        
+          <!-- ==========================EVENTS HEADER AREA ========================= -->
+        <div data-hovering='false' class="events-div" id="events-div"style='display:none'>
+          <div class='s-screen-area z-depth-lil'> 
+            <div class="welcome-div " style="background:teal;color:white;height:400px;padding:50px;">
+              <center>
+                <h2 class="angel">Events</h2>
+                <p class="lead angel phone-para">
+                  What better way to add a taste of the Caribbean to your event than the sound of an authentic steel band?
+                </p>
+              </center>
+            </div>
+          </div>
+          <div class="p-v-clear" style="background:black; height:100%; width:100%;opacity:.5"></div>
+          <div style="margin:120px;margin-top:-540px;" class="p-v-clear">
+            <div class="row d-flex ">
+              <div class="col-lg-12 col-xs-12 col-md-12 order-md-3 order-sm-3 order-sm-3">
+                  <button class="btn btn-danger arr-stance"onclick="showWelcome()"><i class="fa fa-long-arrow-left"></i> Welcome</button>
+                  <button class="btn btn-danger arr-stance" onclick="showWeddings()">Weddings <i class="fa fa-long-arrow-right"></i> </button>
+              </div>
+              <div class="col-lg-6 col-xs-12 col-md-6 col-sm-12 text order-2 order-md-1 order-sm-1 order-lg-1 ">
+
+                <h1 class="angel welcome h1-fix">Events<i class = "fa fa-drum-steelpan"></i></h1>
+                <p class="hero-text angel welcome-text">
+                  What better way to add a taste of the Caribbean to your event than the sound of an authentic steel band?
+                </p>
+                <button class="btn btn-success z-depth-lil" ><i class="fa fa-shopping-cart"></i> <span style="margin:5px;"> BUY DRUM SET </span></button>
+                <div class="CTA"></div>
+                
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 pic-out"><img src="img/theme-event.png"style="margin-top:-50px;" alt="..." class="img-fluid start-stance">
+              </div>
+
+            </div>
+          </div>
+        </div>
+          <!-- =============================================EVENTS END ============================== -->
+        
+        <div data-hovering='false' class="welcome-div" id='welcome-div' style="">
+          <div class='p-v-clear' style="width:100%;height:0;padding-bottom:74%;position:relative;">
+            <iframe src="https://giphy.com/embed/l0HUe0yKxhyzgmO9q" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen>
+            </iframe>
+          </div>
+        
+           <div class="container welcome-touch zero-padding">
+          <div class='s-screen-area'> 
+            <div class="welcome-div z-depth-lil" style="background:teal;color:white;height:400px;padding:30px;">
+              <center>
+                <h2 class=" angel">Welcome</h2>
+                <p class="lead angel phone-para">
+                  With flexible lineups and musicians all over the UK, Steeldrumbands can provide the right outfit for any occasion. Versatile and available in different sizes, from a soloist to a sextet, we can adjust to fit any space and budget.
+                </p>
+              </center>
+            </div>
+          </div>
+          <div class='p-v-clear'>
+            <div class="real-welcome screen-fix" style=''>
+              <div class="row d-flex">
+                <div class="col-lg-12 col-md-3 order-sm-12 order-lg-3">
+                    <button class="btn btn-danger arr-stance"onclick="showWeddings()"><i class="fa fa-long-arrow-left"></i> Weddings</button>
+                    <button class="btn btn-danger arr-stance" onclick="showEvents()">Events <i class="fa fa-long-arrow-right"></i> </button>
+                  </div>
+                <div class="col-lg-6 col-sm-12 col-xs-12 col-md-6 order-sm-1  text order-2 order-lg-1">
+                  <h1 class="angel welcome h1-fix" >Welcome <i class = "fa fa-drum-steelpan"></i></h1>
+                  <p class="hero-text angel welcome-text">
+                    With flexible lineups and musicians all over the UK, Steeldrumbands can provide the right outfit for any occasion. Versatile and available in different sizes, from a soloist to a sextet, we can adjust to fit any space and budget.
+                  </p>
+                   <button class="btn btn-success z-depth-lil" ><i class="fa fa-shopping-cart"></i> <span style="margin:5px;"> BUY DRUM SET </span></button>
+                  <div class="CTA"></div>
+                </div>
+                <div class="col-lg-6 order-1 order-lg-2 pic-out"><img src="img/sillywelcome.jpg" alt="..." class="img-fluid start-stance z-depth-lil"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about-us" class="about-us ">
+      <div class="container">
+        <center> <h2 class = ' my-theme-text'>A real taste of the caribbean</h2></center>
+        <div class="row">
+          <div class="card-group">
+            <div class="card c-hover">
+              <img class="card-img-top about-img" src="img/theme.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Caribbean Themed Events</h5>
+                <p class = " card-text">With a range of styles from traditional island songs, to recent pop songs, reggae, and even Christmas carols, we can add a real taste of the Caribbean to any occasion.</p>
+              </div>
+             
+            </div>
+            <div class="card c-hover">
+              <img class="card-img-top about-img" src="img/wedding.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Weddings</h5>
+                <p class="card-text">We can play before, during (yes we can play you down the aisle), or after your ceremony. We can even learn a request to make your wedding day even more special</p>
+              </div>
+              
+            </div>
+            <div class="card c-hover ">
+              <img class="card-img-top about-img" src="img/workshop.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Team building / Workshops</h5>
+                <p class="card-text">Why not use our style of Caribbean music to help encourage your team to move with the same rhythm, or simply use one of our fun workshops as a change to your usual entertainment.</p>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+      <div class="container">
+        <header class="text-center no-margin-bottom">   
+          <h2>Testimonials</h2>
+          <p class="lead">A few remarks that people have given about our services.</p>
+        </header>
+        <div class="owl-carousel owl-theme testimonials-slider"> 
+          <div class="item-holder">
+            <div class="item  itm-fix">
+              <div class="avatar"><img src="img/avatar.png" alt="..." class="img-fluid"></div>
+              <div class="text">
+                <div class="quote"><img src="img/quote.svg" alt="..." class="img-fluid"></div>
+                <p>Dear Francis and the Team, Thank you for playing at our annual celebration last October for the opening of our newly refurbished sheltered scheme in Longsight, Manchester. All the guests (including The Lord Mayor of Manchester) loved the warm, Caribbean atmosphere created by your steel pan bands and we would definitely be booking you in the future. Thanks again..here's a picture from the event. Job Well Done :o)</p>
+                <strong class="name">Bindu</strong>
+                <small>Chris Arawakwalton Housing Association</small>
+              </div>
+            </div>
+          </div>
+          <div class="item-holder">
+            <div class="item itm-fix">
+              <div class="avatar"><img src="img/avatar.png" alt="..." class="img-fluid"></div>
+              <div class="text">
+                <div class="quote"><img src="img/quote.svg" alt="..." class="img-fluid"></div>
+                <p>Hi guys, just wanted to say thank you so much for playing out our wedding in September. All of our guests commented on how great you were and you made our special day that little bit different.Thanks once again,i would highly recommend you to other people without a doubtLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever</p><strong class="name">Lisa</strong>
+                <small>The Bride </small>
+              </div>
+            </div>
+          </div>
+          <div class="item-holder">
+            <div class="item  itm-fix">
+              <div class="avatar"><img src="img/avatar.png" alt="..." class="img-fluid"></div>
+              <div class="text">
+                <div class="quote"><img src="img/quote.svg" alt="..." class="img-fluid"></div>
+                <p>Hey Guys! Just wanted to say thanks so much for playing at our wedding! You were absolutely awesome and worth every single penny! Many of our guests commented on how dab you were too and what a great idea it was! It was just a Shame we had to take cover inside (due to the great British weather!) but you still made our day extra special so thanks again! Lorem Ipsum has been the industry's standard dummy text ever </p>
+                <strong class="name">Laura and Wayne</strong><small> Bride & Groom</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+   
+    <div id="scrollTop">
+      <div class="d-flex align-items-center justify-content-end"><i class="fa fa-long-arrow-up"></i>To Top</div>
+    </div>
+    <footer class="main-footer extra-features" style='margin-top:-150px;'>
+      <div class="container">
+        <div class="row grid">
+         <div class="item col-lg-6 col-md-6">
+           <center> 
+            <img src="img/youtube_circle.png" class="img-responsive z-depth-lil" style="cursor:pointer;padding:5px;border-radius:100%" /><br> <br>
+            <small class="text text-muted"><b>For our most recent videos, take a look at our YouTube channel.</b></small>
+          </center>
+          </div>
+          <div class="item col-lg-6 col-md-6">
+            <center> 
+            <img src="img/facebook_circle.png" class="img-responsive z-depth-lil" style="cursor:pointer;padding:5px;border-radius:100%" /><br> <br>
+            <small class="text text-muted"><b>Or, for our newest pictures, to see where we have been and where are are going to be next, check our Facebook page.</b></small>
+          </center>
+        </div>
+      </div>
+      <div class="copyrights">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-7">
+              <p><span class="fa fa-envelope"></span> info@steeldrumbands.co.uk  <span>   </span> 
+                <span class="fa fa-phone"></span> 07591475131 </p>
+            </div>
+            <div class="col-md-5 text-right">
+              <p> <span class="badge badge-info  footer-links"><a class='link-scroll' href='#'>Home</a></span>
+                <span class="badge badge-info footer-links"><a class='link-scroll'href='#about-us'>Photos</a></span>
+                <span class="badge badge-info footer-links"><a class='link-scroll'href='#'>Videos</a></span>
+                <span class="badge badge-info footer-links"><a class='link-scroll' href='#testimonials'>Testimonials</a></span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Javascript files-->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"> </script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="vendor/jquery.cookie/jquery.cookie.js"> </script>
+    <script src="vendor/owl.carousel/owl.carousel.min.js"></script>
+    <script src="js/front.js"></script>
+    <script>
+      $(document).ready(function(){
+
+        var setHover = function(which){
+          let id = '#'+which;
+          $(id).on('hover',function(){
+            $(id).attr('data-hovering','true');
+            console.log('Someone just hovered ', which);
+          });
+        }
+        var showWelcome =function(){
+          $('#events-div').fadeOut(300);
+          $('.real-welcome').fadeIn(300);
+          $('#weddings-div').fadeOut();
+          $('#welcome-div').fadeIn(300);
+          $('#c-helper').val('welcome');
+         }
+        var showEvents = function(){
+          $('#welcome-div').fadeOut(300); 
+          $('.real-welcome').fadeOut(100);
+          $('#weddings-div').fadeOut();
+          $('#events-div').fadeIn(300);
+          $('#c-helper').val('events');
+        }
+        var showWeddings = function(){
+          $('#events-div').fadeOut(300);
+          $('.real-welcome').fadeOut(100);
+          $('#welcome-div').fadeOut();
+          $('#weddings-div').fadeIn(300);
+          $('#c-helper').val('weddings');
+        }
+        var mimicCarousel = function(){
+          let current = $('#c-helper').val(); 
+          switch(current){
+            case "welcome":
+              if($('#welcome-div').attr('data-hovering') ==='true'){}
+              else{
+                showEvents(); 
+                $('#c-helper').val('events');
+              }
+              break;
+            case "events": 
+            if($('#events-div').attr('data-hovering') ==='true'){}
+              else{
+                 showWeddings();
+                 $('#c-helper').val('weddings');
+              }
+               break;
+            case "weddings": 
+            if($('#weddings-div').attr('data-hovering') ==='true'){}
+              else{
+                  showWelcome(); 
+                  $('#c-helper').val('welcome');
+              }
+              break;
+            default: 
+              break;
+          }
+      }
+        setInterval(function(){
+         mimicCarousel();
+        },20000)
+        setHover('welcome-div'); 
+        setHover('weddings-div'); 
+        setHover('events-div');
+
+      });
+    </script>
+  </body>
+</html>
